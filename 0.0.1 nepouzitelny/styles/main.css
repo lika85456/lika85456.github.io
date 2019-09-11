@@ -1,0 +1,64 @@
+body{
+    margin:0;
+    background-color:white;
+    font-family: 'IBM+Plex+Sans', sans-serif;
+    color:#333;
+}
+
+main{
+    position:relative;
+    width:100%;
+    height:350px;
+    background-color:#333;
+    color:white;
+    padding-left:25px;
+    padding-top:80px;
+    box-sizing:border-box;
+}
+
+main h1{
+    margin:0;
+    letter-spacing:0.03em;
+    font-family: 'Barlow', sans-serif;
+    font-size:2.5rem;
+}
+
+.underline{
+    width:100%;
+    height:4px;
+    background-color:white;
+    border-radius:4px;
+}
+
+main .underline{
+    width:225px;
+    margin-top:4px;
+}
+
+main button{
+    background-color:rgba(0,0,0,0);
+    color:#FC0;
+    font-weight:600;
+    font-size:1.2rem;
+    border:1px solid #FC0;
+    padding:10px;
+    margin:0 auto;
+    position:relative;
+    display:flex;
+    margin-top:50px;
+    cursor:pointer;
+}
+
+main button:hover{
+    background-color:#FC0;
+    color:white;
+}
+
+footer{
+    width:100%;
+    height:30px;
+    background-color:#333;
+    color:white;
+    line-height:30px;
+    text-align:center;
+}
