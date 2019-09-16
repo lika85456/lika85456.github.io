@@ -1,13 +1,21 @@
 body, html {
     height: 100%;
     margin: 0;
-    font: 400 15px/1.8 "Lato", sans-serif;
+    font: 400 15px/1.8 'Barlow', sans-serif;
     color: #777;
   }
-  
+
+  h3,h2,h1 {
+    margin:0;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #111;
+    text-align:center;
+  }
+
+
   .parallax{
     position: relative;
-    opacity: 0.65;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -18,73 +26,35 @@ body, html {
   #mainPanel {
     background-image: url("images/camera_system.jpg");
     min-height: 100%;
+   
   }
 
-
+#mainPanel{
+  text-align:center;
+  position:relative;
+}  
 
 #mainPanel div{
-  left:calc(50% - 260px);
   position:absolute;
-  /*width:520px;*/
-  width:100px;
-  height:100px;
-  background-color:rgba(0,0,0,0.9);
-  padding:20px;
-  top: calc(50% - 100px);
-  animation-name: h1Expanding;
-  animation-duration: 0.75s;
-  animation-delay: 0.5s;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
-}
-
-#mainPanel img{
-  float:left;
+  width:100%;
+  top:35%;
 }
 
 #mainPanel h1{
-    text-transform: none;
-  color:#EEE;
-    font-size:60px;
-  float:left;
-  line-height:100px;
-  position:relative;
-  margin:0;
-  margin-left:20px;
-    animation-name: h1Opacity;
-  animation-duration: 0.75s;
-  animation-delay: 1.25s;
-  opacity:0;
-  animation-fill-mode: forwards;
-}
-
-@keyframes h1Opacity{
-  0% {opacity:0;}
-  100% {opacity:1;}
-}
-
-@keyframes h1Expanding {
-  0%   {width:100px;}
-  100% {width:520px;}
-}
-
-  
-
-
-  h3,h2,h1 {
+  color:white;
+  font-size:60px;
+    font-weight:800;
     letter-spacing: 3px;
-    text-transform: uppercase;
-    font: 25px "Lato", sans-serif;
-    color: #111;
-    text-align:center;
-  }
+}
 
-  h2{
+#mainPanel h2{
     font-size:30px;
     margin-bottom:45px;
-    font-weight:800;
-    letter-spacing: 5px;
-  }
+    font-weight:400;
+    letter-spacing: 0px;
+  color:#eee;
+}
+
   
   .offeringPanel{
     color: #555;
@@ -96,6 +66,15 @@ body, html {
     min-height:500px;
   }
 
+.offeringPanel h2{
+  font-size:35px;
+  margin-bottom:30px;
+}
+
+.offeringPart h3{
+  font-size:23px;
+  letter-spacing: 1px;
+}
 
   .offeringPart{
     text-align:center;
@@ -131,14 +110,7 @@ body, html {
   color:white;
   padding:15px;
   box-sizing:border-box;
-  box-shadow:1px 1px 5px #000;
-  background-color:rgba(0,0,0,0.8);
   text-align:Center;
-}
-
-.cooperationCell:nth-of-type(3){
-  box-shadow:none !important;
-  background-color:rgba(0,0,0,0) !important;
 }
 
 .cooperationCell h2{
